@@ -117,16 +117,15 @@ class SogoEngine(object):
     def search_weixin(self, query, pause=2.0, user_agent=None, num=10, start=1,
                      end=None, only_current_page=False, selector_links=None, attrs=None):
         return self.search(query=query, pause=pause, user_agent=user_agent, num=num, tpe="weixin",
-                           start=start, end=end, only_current_page=only_current_page,
-                           selector_links=selector_links, attrs=attrs)
+                           start=start, end=end, only_current_page=only_current_page, selector_links=selector_links,
+                           attrs=attrs)
 
     def search_zhihu(self, query, pause=2.0, user_agent=None, num=10, start=1,
-                     end=None, only_current_page=False, selector_links='#main > div > div > div.vrwrap', attrs=None):
+                     end=None, only_current_page=False, selector_links=None, attrs=None):
         return self.search(query=query, pause=pause, user_agent=user_agent, num=num, tpe="zhihu",
-                           start=start, end=end, only_current_page=only_current_page,
-                           selector_links=selector_links, attrs=attrs)
+                           start=start, end=end, only_current_page=only_current_page, selector_links=selector_links,
+                           attrs=attrs)
 
-    
 
 
 
