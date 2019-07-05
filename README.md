@@ -6,12 +6,13 @@
   
   bro = sogo.SogoEngine()
   
-  # 搜索微信
-  wx_bro = bro.search_weixin(query='网络编程')
-  for part in wx_bro:
-      print(part)
+    # 搜索微信
+    wx_bro = bro.search_weixin(query='网络编程')
+    for part in wx_bro:
+        print(part)
       
-  # 搜索知乎
-  zh_bro = bro.search_zhihu(query='网络编程')
-  for part in zh_pro:
-      print(part)
+      
+    # 搜索知乎
+    zh_bro = bro.search_zhihu(query='网络编程')
+    for part in zh_pro:
+        print(part)
